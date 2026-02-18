@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MainLayout from "./pages/MainLayout";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Copyright from "./pages/copyRight";
+import Copyright from "./pages/Copyright";
 import ScrollToTop from "./components/ScrollToTop";
 import AccountDeletion from "./pages/AccountDeletion";
 

@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && vite build",
     "preview": "vite preview",
-    "deploy": "vite deploy"
+    "deploy": "npm run build"
   },
   "dependencies": {
     "@google/genai": "^1.32.0",
