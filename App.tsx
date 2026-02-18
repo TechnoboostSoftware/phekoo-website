@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Copyright from "./pages/copyRight";
 import ScrollToTop from "./components/ScrollToTop";
+import AccountDeletion from "./pages/AccountDeletion";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/copyright" element={<Copyright />} />
+          <Route path="/account-deletion" element={<AccountDeletion />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -5,7 +5,7 @@ import { Footer } from "../components/Footer";
 
 const MainLayout: React.FC = () => {
   return (
-    <div className="w-full min-h-screen bg-phekoo-bg selection:bg-phekoo-coral selection:text-white">
+    <div className="w-full bg-phekoo-bg selection:bg-phekoo-coral selection:text-white">
       <Navbar />
 
       {/* Main Content */}
@@ -15,8 +15,8 @@ const MainLayout: React.FC = () => {
         </main>
       </div>
 
-      {/* Footer Curtain */}
-      <div className="md:fixed md:bottom-0 md:left-0 md:w-full md:h-[650px] md:z-0 bg-phekoo-blue">
+      {/* Footer Curtain - Always visible on mobile, fixed overlay on desktop */}
+      <div className="relative md:fixed md:bottom-0 md:left-0 md:w-full md:h-[650px] md:z-0 bg-phekoo-blue w-full">
         <Footer />
       </div>
     </div>
